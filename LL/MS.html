@@ -15,7 +15,7 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
-                <a class="navbar-brand" href="#!">Jayson Pieters</a>
+                <a class="navbar-brand" href="../index.html">Jayson Pieters</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -32,8 +32,8 @@
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
                 <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="../assets/ms.png" alt="..." /></div>
                 <div class="col-lg-5">
-                    <h1 class="font-weight-light">Modulair Systems</h1>
-                    <p>Since I knew from the start I'd be making most of the game, I wanted it to be as modulair as possbile. Since we had quite a big scope, making everything modulair was the only hope of getting even close to making everything within the time limit.</p>
+                    <h1 class="font-weight-light">Main Systems</h1>
+                    <p>There are quite a few different systems in the game for things like wave spawning, ability using, player movement, buying upgrades etc. At first I tried to make a lot of things modulair, but that was costing me quite a bit of time, which I didn't have a lot of anymore. So quite a few things where not as modulair anymore as I wanted. In here I'll talk about a few of them.</p>
                 </div>
             </div>
             <!-- Call to Action-->
@@ -46,7 +46,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h2 class="card-title">Abilities</h2>
-                            <p class="card-text"></p>
+                            <p class="card-text">At first we didn't know what to do with the abillities, so they ended up being inmplemented quite late into development, which is why the code is quite hard coded. They still are in need of some tweaking, and are quite powerful. Sadly due to time constraints, I couldn't add more abilites or really tweak the ones that where implemented.</p>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <h2 class="card-title">Wave Spawning</h2>
-                            <p class="card-text">Because the navmesh agent didn't move at all, I hade to come up with something new. So instead of updating every 0.5 seconds, I opted to make this a dynamic value: The further away the monster is from the player, the less it updates its path and vise versa.</p>
+                            <p class="card-text">Spawning enemies is ofcourse one of the most important things, otherwise there is no game to play. I made it so you can make a "Wave" with a scriptable object, by just putting in an enemy into an array for ease of use.</p>
                         </div>
                         
                     </div>
@@ -62,10 +62,9 @@
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">The actual code</h2>
-                            <p class="card-text">In the end it was quite simple</p>
+                            <h2 class="card-title">Massive compromieses</h2>
+                            <p class="card-text">Like I said a few times, nearing the end I really ran out of time. This ment that we had to make some pretty big compromises. We decided to scrap 2 of the 3 worlds, 7 abillities and 2 other classes. This was a project made for school, so the rest of the team didn't want to continue developing it. And after working 8 weeks tirelessly on this, I was also getting burnt out on this project. All of this made it so the rest unfortunately didn't get implementend.</p>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="skills.html">More Info</a></div>
                     </div>
                 </div>
             </div>
