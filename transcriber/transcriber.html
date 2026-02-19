@@ -30,42 +30,62 @@
         <div class="container px-4 px-lg-5">
             <!-- Heading Row-->
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="../assets/exit.png" alt="..." /></div>
+                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="../assets/Transcriber.png" alt="..." /></div>
                 <div class="col-lg-5">
-                    <h1 class="font-weight-light">The Randomizer</h1>
-                    <p>Because it is quite a short game, I wanted to make it replayable, to a certain degree. I decided to do this by making a whole lot of things different each run. I decided to randomize 3 things: The player spawn, the monster spawn and the exit doors.</p>
+                    <h1 class="font-weight-light">Transcriber</h1>
+                    <p>A private application for myself made in Python. It transcribes spoken language live to text, with an option to translate the input language to a specified output language. Works for both computer audio and audio through your own microphone.</p>
                 </div>
             </div>
             <!-- Call to Action-->
             <div class="card text-white bg-secondary my-5 py-4 text-center">
-                <div class="card-body"><p class="text-white m-0">Here are some of the key feature.</p></div>
+                <div class="card-body"><p class="text-white m-0">Here are the key features of the application.</p></div>
             </div>
             <!-- Content Row-->
             <div class="row gx-4 gx-lg-5">
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">Player Spawn</h2>
-                            <p class="card-text">The way i made the player spawner is quite simple. I used empty gameobjects to mark spawns for the player, then I put all those gameobjects into an array. On load the game picks a random spawnpoint and puts the player there.</p>
+                            <h2 class="card-title">Live transcriptions</h2>
+                            <p class="card-text">The application uses an AI model to transcribe the input audio to text, all running localy with a setting for changing the AI accuracy (for lower end GPU's).</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="racing.html">More Info</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Translation</h2>
+                            <p class="card-text">By using another AI model, also locally run, I am able to get accurate translations, for if I would like to communicate to people whom dont share the same languages as I do.</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href=".html">More Info</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Relaying</h2>
+                            <p class="card-text">Both of these come together in this final part. It is able to send all the data it gets to a game called 'VRChat', thought their OSC systems. This makes it so I can talk in dutch, and english text will appear in my chatbox.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">Monster Spawn</h2>
-                            <p class="card-text">I used the same base code from the player spawner, with some minor adjustments. At first I just copy pasted the code but used different spawn points, which worked fine. However, I quickly realized that the monster had a small chance to spawn really close to the player. This made playing the game quite annoying at times, because you would instantly get killed. So I made it so the monster has to choose a spawn that is at least X distance away.</p>
+                            <h2 class="card-title">Customizability</h2>
+                            <p class="card-text">Altough this app was made for myself, A few of my friends where interested in it as well. Hence I a added a few settings to tweak (and for convinience) and made a quick 'requirements.txt' file that tells you what you need to download.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">Random doors</h2>
-                            <p class="card-text">The door spawning was quite different however. I wanted to have the doors be there at all times so the player has to take a risk going for a door, or keep running from the monster hoping to extend the distance between them. The system worked by picking 2 doors. The challange was that it could pick the same door twice, so I had to make a check that if it would pick the same door, it chose a different one.</p>
+                            <h2 class="card-title">Unitentional Second Project</h2>
+                            <p class="card-text">While working on the Transcriber, I came across Demucs: Another AI model, which is able to sepperate the tracks of anything you give it. While originally intented to sepperate voice from background noice, I figured that this would be fun project as well.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-primary btn-sm" href="../musicsplitter/musicsplitter.html">Read More</a>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
         <!-- Footer-->
